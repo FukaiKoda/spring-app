@@ -1,12 +1,12 @@
-Here is your tailored roadmap, adapted for Spring Boot, Java best practices, and enterprise-grade architecture.
+### A tailored roadmap, adapted for Spring Boot, Java best practices, and enterprise-grade architecture.
 
 ---
 
-# Project Context: Real-time Project Management Tool (Trello Clone)
+# Project Context: Real-time Project Management Tool
 
 ## Step 0: Spring Initializr Setup
 
-Before writing any code, bootstrap the project using [Spring Initializr](https://start.spring.io/). Use **Maven** or **Gradle** (Maven is highly standard), **Java 17 or 21**, and add the following core dependencies:
+Core dependencies:
 
 * **Spring Web:** For building RESTful applications, including Spring MVC.
 * **Spring Data JPA:** To handle database interactions and ORM.
@@ -20,10 +20,6 @@ Before writing any code, bootstrap the project using [Spring Initializr](https:/
 * **Spring Boot DevTools:** For fast application restarts and live reloads during development.
 
 ---
-
-## Overview
-
-This is the final, "Hard" level project. The goal is to build a production-ready, scalable application with real-time features and complex business rules, leveraging Java's strong typing and Spring's IoC (Inversion of Control) container.
 
 ## Tech Stack
 
@@ -69,17 +65,9 @@ We are adopting strict boundaries to isolate domain logic from the Spring framew
 * **Validation:** Validate incoming requests by applying `@Valid` on Controller parameters and defining constraints on your DTOs.
 * **Security:** Configure a robust `SecurityFilterChain` bean to handle stateless/session configurations, CORS configurations, and method-level security (`@PreAuthorize`).
 
-## Current Setup & Next Steps
+---
 
-* Project bootstrapped via Spring Initializr with Maven/Gradle.
-* `application.yml` (or `application.properties`) configured with database credentials, server ports, and basic Redis properties.
-* Core dependencies imported in `pom.xml` or `build.gradle`.
-
-### Project Status: Backend Core Implementation
-
-We have established the persistence layer with Spring Data JPA and implemented the core authentication flow. We are now moving towards implementing the core project management features.
-
-**Recent Accomplishments:**
+## Tasks
 
 1. Created pure Java Domain models and corresponding JPA Entities (`User`, `Workspace`, `Board`, `List`, `Card`, `WorkspaceMember`) using Lombok for boilerplate reduction and strict `@Entity` mappings.
 2. Configured PostgreSQL connection and Hibernate auto-ddl rules (e.g., `update` or `validate`) in `application.yml`.
